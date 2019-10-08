@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            >
+            <TextView
+                android:id="@+id/state_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/scanDevice_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="Scan Device" />
+
+            <Button
+                android:id="@+id/disconnectDevice_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="Disconnect" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelConnect_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="Cancel connect" />
+
+            <Button
+                android:id="@+id/isConnected_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="Is Connected?" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/getDeviceInfo_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Device Information" />
+
+        <Button
+            android:id="@+id/getDeviceCert_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Device Cert" />
+
+        <Button
+            android:id="@+id/sendApdu_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Send APDU" />
+
+        <Button
+            android:id="@+id/isInitialize_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Is Initialize?" />
+
+        <Button
+            android:id="@+id/generateMnemonic_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Generate Mnemonic" />
+
+        <Button
+            android:id="@+id/checkMnemonic_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Check Mnemonic" />
+
+        <Button
+            android:id="@+id/generateSeed_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Generate Seed" />
+
+        <Button
+            android:id="@+id/seedToMasterKey_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Seed to PriKey" />
+
+
+        <Button
+            android:id="@+id/isBootLoader_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Is BootLoader?" />
+
+        <Button
+            android:id="@+id/setTimeout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Set Timeout" />
+
+        <Button
+            android:id="@+id/enumApplets_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Enum Applets" />
+
+        <Button
+            android:id="@+id/enumSupportCoins_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Enum Coins" />
+
+        <Button
+            android:id="@+id/getAppletVersion_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Get Applet Version" />
+
+        <Button
+            android:id="@+id/queryBattery_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Query Battery" />
+
+        <Button
+            android:id="@+id/clearContext_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Clear Context" />
+
+        <Button
+            android:id="@+id/showVirtualPWD_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Show Virtual PWD" />
+
+        <Button
+            android:id="@+id/cancelVirtualPWD_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Cancel Virtual PWD" />
+
+        <Button
+            android:id="@+id/verifyPIN_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Verify PIN" />
+
+        <Button
+            android:id="@+id/btcCreateContext_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="BTC Create Context" />
+
+        <Button
+            android:id="@+id/btcCreateContext_software_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="BTC Create Context (software)" />
+
+        <Button
+            android:id="@+id/btcGetMainHDNode_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="BTC Main HD Node" />
+
+        <Button
+            android:id="@+id/btcGetHDNode_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="BTC HD Node" />
+
+        <Button
+            android:id="@+id/btcGetAddress_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="BTC Get Address" />
+
+        <Button
+            android:id="@+id/btcTransaction_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="BTC Transaction" />
+
+        <Button
+            android:id="@+id/buildUSDToutput_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Build USDT Output"/>
+
+        <Button
+            android:id="@+id/setUint_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Uint"/>
+
+
+        <Button
+            android:id="@+id/ethCreateContext_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="ETH Create Context" />
+
+        <Button
+            android:id="@+id/ethCreateContext_software_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="ETH Create Context (software)" />
+
+        <Button
+            android:id="@+id/ethGetMainHDNode_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="ETH Main HD Node" />
+
+        <Button
+            android:id="@+id/ethGetHDNode_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="ETH HD Node" />
+
+        <Button
+            android:id="@+id/ethGetAddress_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="ETH Get Address" />
+
+        <Button
+            android:id="@+id/ethTransaction_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="ETH Transaction" />
+
+        <Button
+            android:id="@+id/buildErc20Abi_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Build ERC20" />
+
+    </LinearLayout>
+
+</ScrollView>
+
